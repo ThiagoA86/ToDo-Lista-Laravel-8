@@ -15,9 +15,9 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
        Model::unguard();
-       $this->call(ListaDeTarefas::class);
+       $this->call(Api::class);
        $this->command->info(
-        'Tarefas Adicionadas com sucesso na tabela ListaDeTarefas');
+        'Seguiou o Seed de Api');
         Model::reguard();
 
 
